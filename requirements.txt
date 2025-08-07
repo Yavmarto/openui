@@ -1,0 +1,18 @@
+# Core dependencies derived from pyproject.toml
+weave>=0.50.9
+openai>=1.12.0
+ollama>=0.1.7
+itsdangerous>=2.0.1
+peewee>=3.0.0
+fastapi>=0.111.0
+uvicorn[standard]>=0.22.0
+fastapi-sso>=0.10.0
+boto3>=1.34.67
+tiktoken>=0.8.0
+
+# LiteLLM proxy and Gemini support
+litellm[proxy]>=1.63.11
+google-generativeai>=0.8.4
+
+# Local package (this repo)
+# -e .

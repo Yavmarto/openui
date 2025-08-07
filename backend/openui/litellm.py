@@ -11,15 +11,17 @@ def generate_config():
         models.extend(
             [
                 {
-                    "model_name": "gemini-1.5-flash",
+                    "model_name": "gemini-2.5-flash",
                     "litellm_params": {
-                        "model": "gemini/gemini-1.5-flash-latest",
+                        "model": "gemini/gemini-2.5-flash",
+                        "api_key": os.getenv("GEMINI_API_KEY"),
                     },
                 },
                 {
-                    "model_name": "gemini-1.5-pro",
+                    "model_name": "gemini-2.5-pro",
                     "litellm_params": {
-                        "model": "gemini/gemini-1.5-pro-latest",
+                        "model": "gemini/gemini-2.5-pro",
+                        "api_key": os.getenv("GEMINI_API_KEY"),
                     },
                 },
             ]

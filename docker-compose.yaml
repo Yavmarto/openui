@@ -15,11 +15,13 @@ services:
       dockerfile: Dockerfile
     ports:
       - "7878:7878"
+      - "4000:4000"
     environment:
       - OLLAMA_HOST=http://ollama:11434
       - OPENAI_API_KEY
       - ANTHROPIC_API_KEY
       - GROQ_API_KEY
+      - GEMINI_API_KEY
     env_file:
       - .env
 
